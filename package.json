@@ -1,0 +1,28 @@
+{
+  "name": "react-native-emoji",
+  "version": "1.0.0",
+  "description": "Emoji component for React Native",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/jorilallo/react-native-emoji.git"
+  },
+  "keywords": [
+    "react-native",
+    "emoji",
+    "react-component",
+    "ios"
+  ],
+  "author": "Jori Lallo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jorilallo/react-native-emoji/issues"
+  },
+  "homepage": "https://github.com/jorilallo/react-native-emoji#readme",
+  "dependencies": {
+    "node-emoji": "1.0.3"
+  },
+  "peerDependencies": {
+    "react-native": ">=0.11.0"
+  }
+}
