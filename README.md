@@ -3,7 +3,7 @@
 Emoji as React Native component
 
 ```JSX
-<Emoji type="coffee" style={{fontSize: 50}} />
+<Text style={{fontSize: 50}}><Emoji name="coffee"/></Text>
 ```
 
 ![](http://i59.tinypic.com/fe3rly.png)
