@@ -23,8 +23,8 @@ var Emoji = require('react-native-emoji');
 ```
 
 ### Component properties
+
 - `type` (String) - Emoji's name ([full list](http://unicodey.com/emoji-data/table.htm))
-- `style` (Object) - Regular React styles for `Text` component
 
 ### Credits
 
