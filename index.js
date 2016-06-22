@@ -1,18 +1,16 @@
 import React from 'react';
 import { Text } from 'react-native';
-
-var nodeEmoji = require('node-emoji');
+import nodeEmoji from 'node-emoji';
 
 class Emoji extends React.Component {
+  static propTypes = {
+    name: React.PropTypes.string.isRequired,
+  }
+
   render() {
-    var emoji = nodeEmoji.get(this.props.name);
-    return (<Text>{emoji}</Text>);
+    const emoji = nodeEmoji.get(this.props.name);
+    return (<Text>{ emoji }</Text>);
   }
 }
 
-Emoji.propTypes = {
-  // Emoji's name
-  name: React.PropTypes.string.isRequired,
-};
-
-module.exports=Emoji;
+export default Emoji;
