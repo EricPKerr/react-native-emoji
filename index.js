@@ -1,10 +1,11 @@
-import React from 'react';
+import React, {Component} from 'react';
+import PropTypes from 'prop-types';
 import { Text } from 'react-native';
 import nodeEmoji from 'node-emoji';
 
-class Emoji extends React.Component {
+class Emoji extends Component {
   static propTypes = {
-    name: React.PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
   }
 
   render() {
