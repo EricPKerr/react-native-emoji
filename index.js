@@ -5,10 +5,11 @@ import { Text } from 'react-native';
 import PropTypes from 'prop-types';
 import nodeEmoji from 'node-emoji';
 
-class Emoji extends PureComponent {
+export default class Emoji extends PureComponent {
   static propTypes = {
     name: PropTypes.string.isRequired,
-  }
+    ...Text.propTypes
+  };
 
   render() {
     const { name, ...props } = this.props;
@@ -17,5 +18,3 @@ class Emoji extends PureComponent {
     return (<Text {...props}>{ emoji }</Text>);
   }
 }
-
-export default Emoji;
