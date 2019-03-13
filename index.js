@@ -5,9 +5,11 @@ import { Text } from 'react-native';
 import PropTypes from 'prop-types';
 import nodeEmoji from 'node-emoji';
 
+const names = Object.keys(nodeEmoji.emoji);
+
 export default class Emoji extends PureComponent {
   static propTypes = {
-    name: PropTypes.string.isRequired,
+    name: PropTypes.oneOf(names).isRequired,
     ...Text.propTypes
   };
 
