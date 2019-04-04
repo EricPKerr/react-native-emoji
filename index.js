@@ -1,22 +1,19 @@
 'use strict';
 
-import React, { PureComponent } from 'react';
+import React from 'react';
 import { Text } from 'react-native';
 import PropTypes from 'prop-types';
 import nodeEmoji from 'node-emoji';
 
 const names = Object.keys(nodeEmoji.emoji);
 
-export default class Emoji extends PureComponent {
-  static propTypes = {
-    name: PropTypes.oneOf(names).isRequired,
-    ...Text.propTypes
-  };
+const Emoji = ({name, ...props}) => (
+  <Text {...props}>{ nodeEmoji.get(name) }</Text>
+);
 
-  render() {
-    const { name, ...props } = this.props;
-    const emoji = nodeEmoji.get(name);
-
-    return (<Text {...props}>{ emoji }</Text>);
-  }
+Emoji.propTypes = {
+  ...Text.propTypes,
+  name: PropTypes.oneOf(names).isRequired
 }
+
+export default Emoji;
