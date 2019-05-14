@@ -7,13 +7,22 @@ import nodeEmoji from 'node-emoji';
 
 const names = Object.keys(nodeEmoji.emoji);
 
-const Emoji = ({name, ...props}) => (
-  <Text {...props}>{ nodeEmoji.get(name) }</Text>
-);
+const defaultStyle = {
+  color: '#000'
+};
+
+const Emoji = ({name, style = {}, ...props}) => {
+  style = {
+    ...defaultStyle,
+    ...style
+  };
+
+  return <Text style={style} {...props}>{ nodeEmoji.get(name) }</Text>
+};
 
 Emoji.propTypes = {
   ...Text.propTypes,
   name: PropTypes.oneOf(names).isRequired
-}
+};
 
 export default Emoji;
