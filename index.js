@@ -5,7 +5,8 @@ import { Text } from 'react-native';
 import PropTypes from 'prop-types';
 import nodeEmoji from 'node-emoji';
 
-const names = Object.keys(nodeEmoji.emoji);
+const keys = Object.keys(nodeEmoji.emoji);
+const names = [...keys, ...keys.map((key) => `:${key}:`)]; // Support git flavored markdown emoji
 
 const defaultStyle = {
   color: '#000'
