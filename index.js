@@ -6,7 +6,11 @@ import PropTypes from 'prop-types';
 import nodeEmoji from 'node-emoji';
 
 const keys = Object.keys(nodeEmoji.emoji);
-const names = [...keys, ...keys.map((key) => `:${key}:`)]; // Support git flavored markdown emoji
+
+const names = [
+  ...keys,
+  ...keys.map((key) => `:${key}:`)
+];
 
 const defaultStyle = {
   color: '#000'
