@@ -6,25 +6,23 @@ Emoji as React Native component
 <Emoji name="coffee" style={{fontSize: 50}} />
 ```
 
-![](http://i59.tinypic.com/fe3rly.png)
-
 ### Installation
 
 1. Install package via npm:
 
 ```
-npm install --save react-native-emoji
+npm install --save react-native-emoji-v2
 ```
 
 2. Require in your project
 
 ```javascript
-import Emoji from 'react-native-emoji';
+import Emoji from 'react-native-emoji-v2';
 ```
 
 ### Component properties
 
-- `name` (String) - Emoji's name ([full list](http://unicodey.com/emoji-data/table.htm))  
+- `name` (String) - Emoji's name
   Note that dashes should be replaced with underscores, e.g. `raising-hand` becomes `raising_hand`.
 - All supported `<Text />` properties, like `style`.
 
