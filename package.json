@@ -1,11 +1,11 @@
 {
-  "name": "react-native-emoji",
+  "name": "react-native-emoji-v2",
   "version": "1.8.0",
   "description": "Emoji component for React Native",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/jorilallo/react-native-emoji.git"
+    "url": "https://github.com/web-crazy/react-native-emoji-v2.git"
   },
   "keywords": [
     "react-native",
@@ -18,7 +18,7 @@
   "bugs": {
     "url": "https://github.com/jorilallo/react-native-emoji/issues"
   },
-  "homepage": "https://github.com/jorilallo/react-native-emoji#readme",
+  "homepage": "https://github.com/web-crazy/react-native-emoji-v2#readme",
   "dependencies": {
     "node-emoji": "1.11.0"
   }
