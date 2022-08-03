@@ -20,6 +20,6 @@
   },
   "homepage": "https://github.com/jorilallo/react-native-emoji#readme",
   "dependencies": {
-    "node-emoji": "1.10.0"
+    "node-emoji": "1.11.0"
   }
 }
